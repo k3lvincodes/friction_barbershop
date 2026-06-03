@@ -24,7 +24,7 @@ export default function Footer() {
           Ready for your next look?
         </h2>
         <a
-          href="tel:+2347010636025"
+          href="https://wa.me/2347010636025"
           className="btn-gold"
           style={{ fontSize: 14, padding: '16px 48px' }}
         >

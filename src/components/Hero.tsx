@@ -128,7 +128,7 @@ export default function Hero() {
           className="hero-animate"
           style={{ display: 'flex', gap: 16, justifyContent: 'center', flexWrap: 'wrap' }}
         >
-          <a href="tel:+2347010636025" className="btn-gold">Book Appointment</a>
+          <a href="https://wa.me/2347010636025" className="btn-gold">Book Appointment</a>
           <a href="#services" className="btn-outline">Our Services</a>
         </div>
       </div>

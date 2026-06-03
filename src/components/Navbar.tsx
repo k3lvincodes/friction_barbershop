@@ -76,7 +76,7 @@ export default function Navbar() {
               </a>
             ))}
           </div>
-          <a href="tel:+2347010636025" className="btn-gold nav-cta">
+           <a href="https://wa.me/2347010636025" className="btn-gold nav-cta">
             Book Now
           </a>
         </div>
@@ -137,7 +137,7 @@ export default function Navbar() {
               Barbershop
             </div>
           </div>
-          {[...links, { label: 'Book Now', href: 'tel:+2347010636025' }].map((link) => (
+          {[...links, { label: 'Book Now', href: 'https://wa.me/2347010636025' }].map((link) => (
             <a
               key={link.label}
               href={link.href}
