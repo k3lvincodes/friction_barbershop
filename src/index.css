@@ -1,0 +1,155 @@
+:root {
+  --bg-primary: #0D0D0D;
+  --bg-secondary: #141414;
+  --bg-card: #1A1A1A;
+  --gold: #C9A84C;
+  --gold-light: #E8C97A;
+  --ivory: #F5F0E8;
+  --text-muted: #7A7A7A;
+  --border: rgba(201, 168, 76, 0.2);
+  --red-accent: #8B1A1A;
+  --font-display: 'Playfair Display', serif;
+  --font-sub: 'Cormorant Garamond', serif;
+  --font-body: 'DM Sans', sans-serif;
+  --font-accent: 'Bebas Neue', sans-serif;
+  --font-number: 'Bodoni Moda', serif;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-primary);
+  color: var(--ivory);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--gold);
+  border-radius: 3px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section-number {
+  font-family: var(--font-number);
+  font-size: clamp(80px, 12vw, 160px);
+  color: rgba(201, 168, 76, 0.04);
+  position: absolute;
+  top: -20px;
+  left: 0;
+  line-height: 1;
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+}
+
+.gold-hr {
+  border: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--gold), transparent);
+  margin: 0;
+}
+
+.btn-gold {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 36px;
+  background: var(--gold);
+  color: var(--bg-primary);
+  font-family: var(--font-accent);
+  font-size: 16px;
+  letter-spacing: 2px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.btn-gold:hover {
+  background: var(--gold-light);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(201, 168, 76, 0.3);
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 36px;
+  background: transparent;
+  color: var(--ivory);
+  font-family: var(--font-accent);
+  font-size: 16px;
+  letter-spacing: 2px;
+  border: 1px solid var(--gold);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.btn-outline:hover {
+  background: rgba(201, 168, 76, 0.1);
+  transform: translateY(-2px);
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.8s ease forwards;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 16px;
+  }
+}
